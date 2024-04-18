@@ -1,0 +1,69 @@
+.navbar-dsc {
+  padding-top: 15px;
+  background-color: #f3f3f3;
+
+  .active {
+    .nav-link {
+      color: #8e05c2 !important;
+    }
+  }
+
+  .nav-item {
+    .nav-link {
+      @include media-breakpoint-up(lg) {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      color: #000;
+    }
+
+    .nav-link-dark {
+      color: #fff;
+    }
+
+    .nav-link:hover {
+        color: #8e05c2;
+    }
+    .btn-success {
+      background: #8e05c2;
+      border-radius: 6px;
+    }
+    .btn-success:hover {
+      background: #6a0492;
+    }
+    .btn-success:active {
+      background: #59047a !important;
+    }
+    .btn-success:focus {
+      background: #8e05c2;
+    }
+  }
+
+  .profile-picture {
+    max-height: 45px;
+  }
+
+  .card-badge {
+    display: inline-block;
+    min-width: 2em;
+    padding: 0.3em;
+    border-radius: 50%;
+    font-size: 10px;
+    text-align: center;
+    background: #8e05c2;
+    color: #fefefe;
+    margin-left: -10px;
+  }
+}
+
+.navbar-dsc-dark {
+  background-color: #111;
+}
+// .navbar-fixed-top.scrolled {
+//   background-color: #f3f3f3 !important;
+//   transition: background-color 200ms linear;
+// }
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28142, 5, 194, 1%30' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}

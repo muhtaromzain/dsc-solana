@@ -1,0 +1,19 @@
+.component-nft {
+    background: #F3f3f3;
+    border-radius: 8px;
+    padding: 30px 0;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+        text-decoration: none;
+    }
+
+    .nft-text {
+        color: #0C0D36;
+        font-size: 18px;
+        text-align: center;
+        font-weight: normal;
+        margin-top: 12px;
+    }
+}
