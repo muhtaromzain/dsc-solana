@@ -32,7 +32,7 @@ function initTheme() {
   darkSwitch.checked = darkThemeSelected;
    if (darkThemeSelected) {
      document.body.setAttribute("data-theme", "dark")
-     document.getElementById("tokenomics-img").src = "/images/pie.png";
+     document.getElementById("tokenomics-img").src = "./images/pie.png";
      $(".nav-link").addClass("nav-link-dark");
      $(".navbar").addClass("navbar-dsc-dark");
      $(".timeline").addClass("timeline-dark");
@@ -40,7 +40,7 @@ function initTheme() {
    }
    else {
      document.body.removeAttribute("data-theme");
-     document.getElementById("tokenomics-img").src = "/images/pie1.png";
+     document.getElementById("tokenomics-img").src = "./images/pie1.png";
      $(".nav-link").removeClass("nav-link-dark");
      $(".navbar").removeClass("navbar-dsc-dark");
      $(".timeline").removeClass("timeline-dark");
@@ -58,7 +58,7 @@ function resetTheme() {
   if (darkSwitch.checked) {
     document.body.setAttribute("data-theme", "dark");
     localStorage.setItem("darkSwitch", "dark");
-    document.getElementById("tokenomics-img").src = "/images/pie.png";
+    document.getElementById("tokenomics-img").src = "./images/pie.png";
     $('.nav-link').addClass('nav-link-dark');
     $('.navbar').addClass('navbar-dsc-dark');
     $('.timeline').addClass('timeline-dark');
@@ -66,7 +66,7 @@ function resetTheme() {
   } else {
     document.body.removeAttribute("data-theme");
     localStorage.removeItem("darkSwitch");
-    document.getElementById("tokenomics-img").src = "/images/pie1.png";
+    document.getElementById("tokenomics-img").src = "./images/pie1.png";
     $('.nav-link').removeClass('nav-link-dark');
     $('.navbar').removeClass('navbar-dsc-dark');
     $(".timeline").removeClass("timeline-dark");
